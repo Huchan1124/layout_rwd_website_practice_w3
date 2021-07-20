@@ -68,6 +68,7 @@ a {
 
 header .nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0 29.43px 0;
@@ -87,10 +88,15 @@ header .nav .logo p {
 
 header .nav .nav-items {
   display: flex;
+  flex-wrap: wrap;
 }
 
-header .nav .nav-items li:not(:last-child) {
+header .nav .nav-items li {
   margin-right: 64px;
+}
+
+header .nav .nav-items li:last-child {
+  margin-right: 0;
 }
 
 header .banner-bg {
@@ -105,6 +111,54 @@ header .banner-bg h2 {
   text-align: right;
   position: absolute;
   left: 579px;
+  right: 45px;
   bottom: 352px;
+}
+
+@media (max-width: 992px) {
+  header .nav {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  header .banner-bg h2 {
+    left: 297.5px;
+    right: 38.5px;
+    bottom: 373px;
+    font-size: 48px;
+  }
+  header .banner-bg h2 span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  header .nav {
+    flex-direction: column;
+    padding: 0 0;
+  }
+  header .nav .logo {
+    width: 48px;
+    height: 29.14px;
+    background-size: contain;
+    margin-top: 10px;
+    margin-bottom: 10.86px;
+  }
+  header .nav .nav-items {
+    width: 100%;
+    text-align: center;
+  }
+  header .nav .nav-items li {
+    width: 50%;
+    margin-right: 0;
+  }
+  header .banner-bg h2 {
+    left: 72px;
+    right: 15px;
+    bottom: 163px;
+    font-size: 32px;
+  }
+  header .banner-bg h2 span {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
