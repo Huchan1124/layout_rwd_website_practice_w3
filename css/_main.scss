@@ -38,7 +38,7 @@ header{
         height: 840px;
         position: relative;
         h2 {
-            outline: 1px black solid;
+            // outline: 1px black solid;
             text-align: right;
             position: absolute;
             left:579px;
@@ -132,14 +132,14 @@ header{
         padding-bottom: 48.33px;
     }
     .feature-items {
-        outline: 1px solid red;
+        // outline: 1px solid red;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
       
  
         li {
-            outline: 1px solid red;
+            // outline: 1px solid red;
             width: 255px;
             h3 {
                 margin-top: 24.08px;
@@ -190,7 +190,42 @@ header{
 }
 
 // classical-glasses
+.classical-glasses {
+    padding-top: $pm-60;
+    padding-bottom: $pm-80;
+    h2 {
+        margin-bottom: $pm-40;
+    }
+    .classical-glasses-items {
+        display: flex;
+        flex-wrap: wrap;
+       
+        li {
+            display: flex;
+            align-items: center;
+            // outline: black 1px solid;
+            width: 100%;
+            margin-bottom: $pm-32;
+            img {
+                width: 57%;
+            }
+            h3 {
+                width: 43%;
+                display: flex;
+                align-items: center;
+                padding-left: $pm-32;
+            }
 
+        }
+
+        li:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+        
+        
+    }
+  
+}
 
     
   

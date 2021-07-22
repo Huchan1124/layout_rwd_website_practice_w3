@@ -101,6 +101,10 @@ table {
   color: #AA0601;
 }
 
+.material-icons-outlined.md-44 {
+  font-size: 44px;
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -121,10 +125,20 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 767px;
+  }
 }
 
 .fw-bold {
@@ -179,7 +193,6 @@ header .banner-bg {
   position: relative;
 }
 header .banner-bg h2 {
-  outline: 1px black solid;
   text-align: right;
   position: absolute;
   left: 579px;
@@ -251,7 +264,6 @@ header .banner-bg h2 {
   padding-bottom: 48.33px;
 }
 .feature .feature-items {
-  outline: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +274,6 @@ header .banner-bg h2 {
           justify-content: center;
 }
 .feature .feature-items li {
-  outline: 1px solid red;
   width: 255px;
 }
 .feature .feature-items li h3 {
@@ -291,4 +302,48 @@ header .banner-bg h2 {
     width: 100%;
     margin-bottom: 10%;
   }
+}
+
+.classical-glasses {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.classical-glasses h2 {
+  margin-bottom: 40px;
+}
+.classical-glasses .classical-glasses-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.classical-glasses .classical-glasses-items li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.classical-glasses .classical-glasses-items li img {
+  width: 57%;
+}
+.classical-glasses .classical-glasses-items li h3 {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 32px;
+}
+.classical-glasses .classical-glasses-items li:nth-child(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
