@@ -1,4 +1,4 @@
-// header
+header{
     .nav {
         // outline: 1px solid black;
         display: flex;
@@ -30,6 +30,8 @@
         }
     }
 
+    
+
     .banner-bg {
         background: url("../img/banner/banner.png") no-repeat center;
         width: 100%;
@@ -46,93 +48,98 @@
 
     }
 
-
-@include pad {
-    @media (max-width:992px) {
-        .nav  {     
-         padding-left: 39px;
-         padding-right: 39px;
-     
-        }
-       .banner-bg {
-         h2 {
-             left:297.5px;
-             right:38.5px;
-             bottom: 373px;
-             font-size: 48px;
-             span {
-                 font-size: 20px;
+    @include pad {
+            .nav  {     
+             padding-left: 39px;
+             padding-right: 39px;
+         
+            }
+           .banner-bg {
+             h2 {
+                 left:297.5px;
+                 right:38.5px;
+                 bottom: 373px;
+                 font-size: 48px;
+                 span {
+                     font-size: 20px;
+                 }
              }
-         }
-        }
-     
-     }
-
-}
-
-
-@include mobile {
-    @media (max-width: 767px) {
-        .nav {
-          flex-direction: column;
-          padding: 0 0;
-          .logo {
-              width: 48px;
-              height: 29.14px;
-              background-size: contain;
-              margin-top: 10px;
-              margin-bottom: 10.86px;
-          }
-        }
-       .nav .nav-items {
-          width: 100%;
-          text-align: center;
-    
-          }
-    
-        .nav .nav-items li {
-            width: 50%;
-            margin-right: 0 ;
-            border: 1px solid $secondary-color;
-            padding: $pm-8 50px;
-            font-size: 20px;
-           
-            }
-    
-        .banner-bg  {
-            background: url("../img/banner/banner-sm.png") no-repeat;
-            background-size: cover;
-            height: 394px;
-            h2 {
-                left: 72px;
-                right: 15px;
-                bottom: 163px;
-                font-size: 32px;
-            span {
-                font-size: 16px;
-    
-            }
-    
             }
          
-        }
-        }
-          
+         
+    
+    }
+    
+    
+    @include mobile {
+            .nav {
+              flex-direction: column;
+              padding: 0 0;
+              .logo {
+                  width: 48px;
+                  height: 29.14px;
+                  background-size: contain;
+                  margin-top: 10px;
+                  margin-bottom: 10.86px;
+              }
+            }
+           .nav .nav-items {
+              width: 100%;
+              text-align: center;
+        
+              }
+        
+            .nav .nav-items li {
+                width: 50%;
+                margin-right: 0 ;
+                border: 1px solid $secondary-color;
+                padding: $pm-8 50px;
+                font-size: 20px;
+               
+                }
+        
+            .banner-bg  {
+                background: url("../img/banner/banner-sm.png") no-repeat;
+                background-size: cover;
+                height: 394px;
+                h2 {
+                    left: 72px;
+                    right: 15px;
+                    bottom: 163px;
+                    font-size: 32px;
+                span {
+                    font-size: 16px;
+        
+                }
+        
+                }
+             
+            }
+            
+              
+    
+    }
 
 }
+
 
 // feature 
 .feature {
+    padding-top: $pm-60;
+    padding-bottom: $pm-80;
+   
     .feature-title {
-        padding-top: $pm-60;
         padding-bottom: 48.33px;
     }
     .feature-items {
+        outline: 1px solid red;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: $pm-80;
+      
  
         li {
+            outline: 1px solid red;
             width: 255px;
             h3 {
                 margin-top: 24.08px;
@@ -148,6 +155,35 @@
             height: 83.33px;
         }
     
+    }
+
+    @include pad {
+      
+        li {
+          
+            width: 50%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+           
+        }
+        
+    }
+
+    @include mobile {
+        h2 {
+            font-size: 24px;
+            
+        }
+        
+        li {
+            width: 100%;
+            margin-bottom: 10%;
+
+           
+            
+           
+        }
+        
     }
         
 
