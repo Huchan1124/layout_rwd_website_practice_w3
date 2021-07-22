@@ -19,10 +19,18 @@ a {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+
+    @include pad {
+        max-width: 992px;
+    }
+
+    @include mobile {
+        max-width: 767px;
+    }
 }
 
 .fw-bold {

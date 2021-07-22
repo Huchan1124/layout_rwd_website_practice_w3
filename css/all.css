@@ -97,6 +97,10 @@ table {
   color: #650300;
 }
 
+.text-color-light-dark {
+  color: #AA0601;
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
