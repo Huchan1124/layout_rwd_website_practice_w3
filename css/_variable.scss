@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+$primary-color:#AA0601;
+$secondary-color:#FBF2F2;
+$text-color:#111619;
+$text-color-dark:#650300;
+
+$pm-8:8px;
+$pm-16:16px;
+$pm-20:20px;
+$pm-22:22px;
+$pm-24:24px;
+$pm-30:30px;
+$pm-32:32px;
+$pm-36:36px;
+$pm-38:38px;
+$pm-40:40px;
+$pm-44:44px;
+$pm-48:48px;
+$pm-52:52px;
+$pm-56:56px;
+$pm-60:60px;
+$pm-64:64px;
+$pm-76:76px;
+$pm-80:80px;
+
+.fz-16{
+    font-size: 16px;
+ }  
+.fz-20 {
+    font-size: 20px;
+ }   
+.fz-24 {
+    font-size: 24px;
+ }  
+.fz-36 {
+    font-size: 36px;
+ }  
+.fz-48 {
+    font-size: 48px;
+ }   
+.fz-64 {
+    font-size: 64px;
+ }   
+.fz-72 {
+    font-size: 72px;
+ }
+    
+
+.bg-primary-color {
+    background-color: $primary-color;
+}
+
+.text-color-secondary {
+    color: $secondary-color;
+}
+
+.text-color-dark {
+    color: $text-color-dark;
+
+}
+.fw-bold {
+    font-weight: bold;
+}
