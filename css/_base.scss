@@ -19,10 +19,9 @@ a {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1110px;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
+  
 
     @include pad {
         max-width: 992px;
@@ -33,11 +32,19 @@ a {
     }
 }
 
+
+
 .fw-bold {
     font-weight: bold;
+    
 }
 
 .text-center {
     text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
