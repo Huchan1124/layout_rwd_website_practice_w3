@@ -115,6 +115,7 @@ table {
 
 body {
   font-family: 'Roboto','Noto Sans', serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -130,17 +131,20 @@ a {
 .container {
   max-width: 1110px;
   margin: 0 auto;
+  outline: #310c50 1px solid;
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 992px;
+    padding: 0 15px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     max-width: 767px;
+    padding: 0 15px;
   }
 }
 
@@ -354,6 +358,8 @@ header .banner-bg h2 {
 
 .faq h2 {
   margin-bottom: 60px;
+  padding-left: 16px;
+  border-left: 8px solid #9F1213;
 }
 
 .faq li {
@@ -365,6 +371,7 @@ header .banner-bg h2 {
   margin-bottom: 32px;
   margin-left: 95px;
   font-weight: normal;
+  line-height: 1.5;
 }
 
 .footer {

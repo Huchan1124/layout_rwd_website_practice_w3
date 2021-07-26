@@ -1,9 +1,13 @@
 
+
+
 .faq {
     padding-top: $pm-96;
     padding-bottom: 160px;
     h2 {
         margin-bottom: $pm-60;
+        padding-left: $pm-16;
+        border-left: 8px solid $title-border-color;
     }
 
     li {
@@ -14,8 +18,11 @@
             margin-bottom: $pm-32;
             margin-left: 95px;
             font-weight: normal;
+            line-height: 1.5;
         }
     }
+
+
 }
 
 
