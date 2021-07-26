@@ -28,17 +28,37 @@
 
 .footer {
     color: $secondary-color;
+    .container {
+        @include mobile {
+         flex-direction: row-reverse;
+        }
+    }
     
     .footer-nav {
         // outline: black solid 1px;
-        width: 50%;
+        max-width: 50%;
         padding: 44px 0;
+        flex-wrap: nowrap;
+      
         li {
+            // outline: black solid 1px;
             margin-right:$pm-48;
         }
 
         li:last-child {
             margin-right: 0;
+        }
+
+        @include pad {
+            li {
+                margin-right:40px;
+            }
+        }
+
+        @include mobile {
+            li {
+                display: none;
+            }
         }
     }
 
@@ -56,6 +76,16 @@
        li:last-child {
            margin-right: 0;
        }
+
+
+        @include pad {
+
+            li {
+                width: 24px;
+               
+             margin-right:40px;
+            }
+        }
     }
 
     .footer-contact {
@@ -72,6 +102,35 @@
           margin-right: $pm-20;
           
         }
+
+        @include pad {
+            padding-bottom: $pm-20;
+            font-size: 20px;
+            li:nth-child(1)  {
+                margin-bottom: 12px;
+                img {
+                    margin-right: 11px;
+                    width: 18px;
+
+                }
+            }
+            li:nth-child(2)  img {
+              margin-right: 10px;
+              width: 20px;
+              
+            }
+
+
+        }
+
+        @include mobile {
+            padding-top:$pm-24 ;
+            padding-bottom: 25px;
+            font-size: 16px;
+           
+           }
+
+
     }
 
     .footer-copyright {
@@ -84,5 +143,23 @@
             margin-right: $pm-48;
             
           }
+
+          @include mobile {
+            font-size: 14px;
+            padding-top: 16px;
+            padding-bottom: $pm-24;
+            
+            li {
+               width: 100%;
+               flex-direction: column;
+               margin-bottom: 8px;
+               p {
+                   margin-bottom: 8px;
+               }
+            
+            }
+
+           
+           }
     }
 }
